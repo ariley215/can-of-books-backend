@@ -23,15 +23,15 @@ Books are life-changing. They have the power to enlighten, educate, entertain, h
 ## Change Log
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+12-11-2023 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
 
 ## Estimates
 
-Name of feature: ________________________________
+Name of feature:Storage
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 1 hr
 
-Start time: _____
+Start time: ~6:30
 
 Finish time: _____
 
