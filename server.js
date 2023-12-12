@@ -22,7 +22,7 @@ app.get('/books', async(request, response) => {
   const books = await Book.find(filterQuery);
 
   response.json(books);
-  response.send('test request received')
+  // response.send('test request received')
 
 })
 
