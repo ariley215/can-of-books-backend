@@ -24,7 +24,9 @@ express, Mongo, JavaScript
 
 ## Change Log
 
-12-11-2023 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource.
+12-11-2023 4:59pmEST - Application now has a fully-functional express server, with a GET route for the location resource.
+
+12-12-2023 8:08pmEST - Application has route handler for books.
 
 ## Estimates
 
@@ -38,8 +40,17 @@ Finish time: 9:00
 
 Actual time needed to complete: 2.5
 
-## Credit and Collaborations
+Name of feature: Route Handlers
 
+Estimate of time needed to complete: 1hr
+
+Start time: ~7:30
+
+Finish time: 8:00
+
+Actual time needed to complete: 30 min
+
+## Credit and Collaborations
 
 -------Logistical------
 What hours will you be available to communicate? 1-6 pst

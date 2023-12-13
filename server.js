@@ -5,25 +5,24 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose')
 mongoose.connect(process.env.MONGODB_URI);
-
 const app = express();
-app.use(cors());
-
 const PORT = process.env.PORT || 3001;
 const Book = require('./models/books');
+const {readBooks, createBook, deleteBook} = require('./handlers');
 
-app.get('/books', async(request, response) => {
-  const filterQuery = {};
 
-  if (request.query.title) {
-    filterQuery.title= request.query.title;
-  }
+app.use(cors());
+app.use(express.json());
 
-  const books = await Book.find(filterQuery);
+mongoose.connect(process.env.MONGODB_URI);
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', () => {
+  console.log('We\'re connected!');
+});
 
-  response.json(books);
-  // response.send('test request received')
-
-})
+app.get('/books', readBooks) 
+app.post('/books', createBook)
+app.delete('/books/: id', deleteBook)
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
