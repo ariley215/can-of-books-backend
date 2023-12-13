@@ -17,6 +17,11 @@ async function readBooks(request, response) {
 async function createBook(request, response) {
 
   try {
+    
+    if (!request.body.title || !request.body.description || !request.body.status) {
+      return response.status(400).send('Title, description, and status are required');
+    }
+
 
     const newBook = await Book.create(request.body);
     response.send(newBook);

@@ -23,6 +23,6 @@ db.once('open', () => {
 
 app.get('/books', readBooks) 
 app.post('/books', createBook)
-app.delete('/books/: id', deleteBook)
+app.delete('/books/:id', deleteBook)
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));

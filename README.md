@@ -28,6 +28,8 @@ express, Mongo, JavaScript
 
 12-12-2023 8:08pmEST - Application has route handler for books.
 
+12-12-2023 9:10pmEST - Routes work, new books added.
+
 ## Estimates
 
 Name of feature:Storage
