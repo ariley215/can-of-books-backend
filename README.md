@@ -30,6 +30,8 @@ express, Mongo, JavaScript
 
 12-12-2023 9:10pmEST - Routes work, new books added.
 
+12-13-2023 7:32pmEST - PUT Route added
+
 ## Estimates
 
 Name of feature:Storage
@@ -51,6 +53,17 @@ Start time: ~7:30
 Finish time: 8:00
 
 Actual time needed to complete: 30 min
+
+Name of feature: Add PUT route
+
+Estimate of time needed to complete: 20 min
+
+Start time: ~7:20pm EST
+
+Finish time: 7:31pm EST
+
+Actual time needed to complete: 11 minutes
+
 
 ## Credit and Collaborations
 

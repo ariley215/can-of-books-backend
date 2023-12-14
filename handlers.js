@@ -47,4 +47,15 @@ async function deleteBook(request, response) {
   }
 }
 
-module.exports = {readBooks, createBook, deleteBook};
+
+async function updateBook(request, response) {
+  const id = request.params.id;
+
+  try {
+    await Book.findByIdAndUpdate(id, request.body); 
+    response.status(200).send('success');
+  } catch (error) {
+    response.status(500).send(error.message);
+  }
+}
+module.exports = {readBooks, createBook, deleteBook, updateBook};

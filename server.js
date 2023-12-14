@@ -8,7 +8,7 @@ mongoose.connect(process.env.MONGODB_URI);
 const app = express();
 const PORT = process.env.PORT || 3001;
 const Book = require('./models/books');
-const {readBooks, createBook, deleteBook} = require('./handlers');
+const {readBooks, createBook, deleteBook, updateBook} = require('./handlers');
 
 
 app.use(cors());
@@ -24,5 +24,6 @@ db.once('open', () => {
 app.get('/books', readBooks) 
 app.post('/books', createBook)
 app.delete('/books/:id', deleteBook)
+app.put('/books:id', updateBook)
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
